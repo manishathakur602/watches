@@ -39,11 +39,12 @@ html {
 }
 
 body {
-     color: #666666;
+     color: #3c394b;
      font-size: 14px;
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
+     margin-top:0;
 }
 
 a {
@@ -227,7 +228,9 @@ button {
      width: 100%;
      height: 100%;
 }
-
+.glasses_box{
+     padding: 10px 0 0 0;
+}
 .loader {
      height: 100%;
      width: 100%;
@@ -244,6 +247,8 @@ button {
 }
 
 
+
+
 /*-- header area --*/
 
 
@@ -255,9 +260,59 @@ button {
 
 /*-- navigation--*/
 
+
+.carousel-item{
+     background-image: url("https://static01.nyt.com/images/2023/08/10/multimedia/10sp-watches-leica-inyt-01SUB/-10sp-watches-leica-inyt-01SUB-articleLarge.jpg?quality=75&auto=webp&disable=upscale");
+     background-size: cover;
+     width: 100%;
+     height: 600px;
+     
+}
+.second{
+     background-image: url("https://media.gq.com/photos/64a7062ef8b3d9b70b372ab6/16:9/w_2560%2Cc_limit/LEAD.jpg ");
+     background-size: cover;
+     width: 100%;
+     height: 600px;
+     
+}
+ .second2{
+     background-image: url("https://cdn.shopify.com/s/files/1/0627/5517/files/02-26-20_Aidan_264883.jpg?v=1603213851");
+     background-size: cover;
+     width: 100%;
+     height: 600px;
+     
+}
+.black{
+     color: #000; 
+     font-size: 10px; 
+     text-align: center;
+     gap:1rem;
+     
+}
+.black1{
+     color:white; 
+     font-size: 20px; 
+     text-align: center;
+     gap: 1rem;
+     margin-top: 2%;
+     
+    
+     
+     
+
+}
+/* .black1{
+     color:white; 
+     font-size: 50px; 
+     text-align: center;
+     gap: 1rem;
+
+} */
+
+
 .navigation.navbar {
      float: right;
-     background: #fff;
+     /* background: #fff; */
      clear: both;
      padding: 23px 25px !important;
      border-radius: 64px;
@@ -273,7 +328,7 @@ button {
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color: #03cafc;
+     color: white;
 }
 
 .navigation.navbar-dark .navbar-nav .active>.nav-link,
@@ -306,17 +361,35 @@ button {
 
 .header {
      width: 100%;
-     padding: 30px 30px;
+     /* padding: 20px 20px; */
      background: transparent;
-     position: absolute;
-     z-index: 999;
-     border-top: #090102 solid 11px;
+     /* position: absolute; */
+     /* z-index: 999; */
+     border-radius: 20px;
+     padding: 10px;
+} 
+header{
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     padding: 10px;
+     background:gray;
+     
+}
+.watchesImg{
+     cursor: pointer;
+}
+ 
+
+.logoImg{
+     max-height: 100px;
 }
 
-.logo {
-     padding-top: 14px;
+.row{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
-
 
 /** banner section **/
 
@@ -327,26 +400,28 @@ button {
 
 .text-bg {
      text-align: center;
+    
 }
 
 .text-bg h1 {
-     color: #070404;
+     margin-top: 30px;
+     color: #f4eeee;
      font-size: 60px;
      line-height: 76px;
      padding-bottom: 45px;
      font-weight: bold;
      text-transform: uppercase;
+
 }
 
 .text-bg .read_more {
-     border: #1a1a1a solid 2px;
-     color: #1a1a1a !important;
+     border: #eae4e4 solid 2px;
+     color: #eee9e9 !important;
      font-weight: 500;
      display: block;
      margin: 0 auto;
-     margin-top: 44px;
+     margin-top: 20px;
 }
-
 #banner1 .carousel-caption {
      position: inherit;
      padding: 0;
@@ -361,12 +436,14 @@ button {
      width: 62px;
      height: 60px;
      background: transparent;
-     border: #1a1a1a solid 2px;
+     border: #ede9e9 solid 2px;
      opacity: 1;
      font-size: 30px;
-     color: #131215;
+     color: #f3f1f7;
      border-radius: 60px;
      top: 43%;
+     
+     
 }
 
 #banner1 .carousel-control-prev:hover,
@@ -382,14 +459,26 @@ button {
      position: absolute;
      left: 20px;
      bottom: 10px;
+     
 }
 
 #banner1 a.carousel-control-next {
      position: absolute;
      right: 20px;
      bottom: 10px;
+     
 }
+.watchesImg{
+transition: all 0.6s ease;
 
+}
+ .watchesImg:hover {
+     opacity: 0.7;  
+     transform: scale(0.95);  
+     box-shadow: 5px 5px 22px 2px rgba(0,255,255,0.75);
+-webkit-box-shadow: 5px 5px 22px 2px rgba(0,255,255,0.75);
+-moz-box-shadow: 5px 5px 22px 2px rgba(0,255,255,0.75);
+ }
 
 /** end banner section **/
 
@@ -421,18 +510,36 @@ button {
      font-weight: 500;
      border-radius: 40px;
 }
+.header{
+     background: rgb(39, 39, 44);
+     background: linear-gradient(45deg, rgba(3,4,22,1) 25%, rgb(18, 22, 23) 74%);
+}
+.header:hover{
+background: rgb(59, 99, 109);
+background: linear-gradient(120deg, rgb(24, 25, 26) 33%, rgb(83, 84, 108) 78%);
+}
 
+.aboutheader{
+     background: rgb(39, 39, 44);
+     background: linear-gradient(45deg, rgba(3,4,22,1) 25%, rgb(18, 22, 23) 74%);
+     padding: 30px;
+}
+.aboutheader:hover{
+     background: rgb(59, 99, 109);
+     background: linear-gradient(120deg, rgba(3,4,22,1) 33%, rgb(83, 84, 108) 78%);
+}
 .read_more:hover {
      background: #03cafc;
      color: #fff !important;
      transition: ease-in all 0.5s;
 }
 
-
+ 
 /** about section **/
 
 .about {
      border-bottom: #000 solid 1px;
+     
      padding: 130px 0 90px 0;
 }
 
@@ -441,14 +548,15 @@ button {
 }
 
 .about .titlepage::before {
-     position: absolute;
+     /* position: absolute; */
      content: "";
-     width: 220px;
-     height: 411px;
-     right: -30px;
+     width: 150px;
+     height: 370px;
+     /* right: 10px; */
      background: url(../images/about_right_cross.jpg);
      background-repeat: no-repeat;
-     top: -27px;
+     top: -17px;
+  
      z-index: -1;
 }
 
@@ -457,24 +565,29 @@ button {
 }
 
 .about .titlepage {
-     border: #000 solid 1px;
+     border:black solid 1px;
+     
      padding: 40px 40px;
-     z-index: 10018;
+     z-index: 10025;
      background: #fff;
      margin-right: 40px;
+     background-color:#FFD8F0;
 }
 
+
 .about .titlepage p {
-     color: #2a2a2c;
      font-size: 17px;
      line-height: 35px;
      font-weight: 400;
      padding-top: 20px;
+     background-color: #FFD8F0;
+     padding-top: 10px ;
 }
 
 .about .read_more {
      border: #1a1a1a solid 2px;
      color: #1a1a1a;
+  
      font-weight: 500;
      margin-top: 44px;
 }
@@ -505,6 +618,7 @@ button {
 .blu {
      color: #03cafc;
      text-transform: initial;
+    
 }
 
 .glasses .glasses_box {
@@ -575,7 +689,7 @@ button {
 
 .shop .max_width {
      text-align: left;
-     background: #030404;
+     background: #E4A0B7;
      height: 100%;
      padding-top: 86px;
      padding-left: 50px;
@@ -656,7 +770,8 @@ button {
      border: #606060 solid 1px;
      padding: 40px 32px 40px 0px;
      float: left;
-     text-align: left;
+     text-align:left;
+     background-color: #ECBDC4;
      margin-left: 89px;
 }
 
@@ -764,7 +879,7 @@ button {
 }
 
 .send_btn:hover {
-     background: #4b4b4c;
+     background: #12128a;
      transition: ease-in all 0.5s;
 }
 
@@ -778,12 +893,21 @@ button {
 
 
 /** footer **/
+footer{
+     background-color: gray;
+     padding: 1rem;
 
+}
 .footer {
-     background: #252525;
-     padding-top: 90px;
+     background: #9e93a0;
+     /* padding-top: 90px; */
      text-align: center;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
      font-family: 'Roboto', sans-serif;
+}
+.mainfooter{
+     padding: 1rem;
 }
 
 ul.location_icon {
@@ -792,41 +916,49 @@ ul.location_icon {
 
 ul.location_icon li {
      display: inline-block;
-     font-size: 17px;
+     font-size: 12px;
      line-height: 20px;
-     color: #fff;
+     color: #2114e0;
      text-align: center;
      padding: 0 40px;
+     font-weight: 350;
+     margin-top: 30px;
+     padding: 1rem;
+     
+     
 }
 
 ul.location_icon li a {
      font-size: 40px;
-     color: #fff;
+     color: #396269;
      line-height: 30px;
      display: block;
 }
 
 .copyright {
-     margin-top: 80px;
+     /* margin-top: 80px; */
      padding-bottom: 20px;
-     background: #fbfdfd;
+     background: #b8b4ae;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
 }
 
 .copyright p {
-     color: #292929;
+     color: #930808;
      font-size: 18px;
      line-height: 22px;
      text-align: center;
      padding-top: 25px;
      font-weight: normal;
+     
 }
 
 .copyright a {
-     color: #292929;
+     color: #930809;
 }
 
 .copyright a:hover {
-     color: #03cafc;
+     color: #0998b8;
 }
 
 
@@ -837,10 +969,145 @@ ul.location_icon li a {
 
 .position_head .header {
      position: inherit;
-     background: #03cafc;
+     background: #979e85;
 }
 
 .position_head .glasses,
 .shop {
      margin-bottom: 90px;
 }
+
+
+
+/* footer section */
+
+.homefooter{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+
+
+.contactfooter{
+     display: flex;
+     justify-content: space-around;
+}
+.loginfooter{
+     display: flex;
+     justify-content: center;
+     gap: 8rem;
+}
+.search
+{
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     font: bold;
+}
+
+.help{
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     font: bold;
+
+}
+
+.help2{
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     font: bold;  
+}
+
+.home{
+     display: flex;
+     flex-direction: column;
+     align-items:start;
+     font: bold; 
+     line-height: 10px;
+   
+     
+}
+.header{
+     background-color: #4a4848
+}
+.aboutheader{
+     padding: 10px;
+     border-radius: 20px
+}
+
+@media (max-width: 500px){
+     .home{
+          display: block
+     }
+
+     .search{
+          display: block
+     }
+
+     .help{
+          display: block
+     }
+
+     .help2{
+          display: block
+     }
+}
+
+
+
+@media (max-width: 768px) {
+     .footer {
+         padding: 20px;
+         background-color: #f2f2f2;
+     }
+ 
+     .mainfooter {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     .homefooter {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+     }
+ 
+     .home, .search, .help, .help2 {
+         width: 100%;
+         text-align: center;
+         margin-bottom: 20px;
+     }
+ 
+     .homefooter p {
+         font-size: 18px;
+         font-weight: bold;
+     }
+ 
+     .nav-link, li {
+         display: block;
+         margin: 5px 0;
+         font-size: 16px;
+     }
+ 
+     .help2 li {
+         margin-bottom: 10px;
+     }
+ 
+     .help2 a {
+         color: #000;
+         text-decoration: none;
+         font-weight: bold;
+     }
+ 
+     .help2 a:hover {
+         text-decoration: underline;
+     }
+ }
+;
+
+
+
